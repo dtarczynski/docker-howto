@@ -9,3 +9,15 @@
 
 # Show container logs. When something goes wrong.
 > docker logs 6cf52a3b570b
+
+# Stop all running containers
+> docker stop $(docker ps -a -q)
+
+# Download an image
+> docker pull image_name
+
+# Delete dangling images
+> docker rmi $(docker images -q -f dangling=true)
+
+# Docker Cheat Sheet
+http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf
