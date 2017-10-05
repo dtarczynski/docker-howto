@@ -19,5 +19,9 @@
 # Delete dangling images
 > docker rmi $(docker images -q -f dangling=true)
 
+or
+
+> docker image prune
+
 # Docker Cheat Sheet
 http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf
