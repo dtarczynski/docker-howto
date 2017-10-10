@@ -13,6 +13,9 @@
 # Build Image from Dockerfile
 > docker build -t dtarczynski/simpleapi .
 
+# Run Container from existing image
+> docker run --rm -it -p 8989:80 dtarczynski/simpleapi
+
 # Show container logs. When something goes wrong.
 > docker logs 6cf52a3b570b
 
