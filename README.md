@@ -17,6 +17,11 @@ ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
 ### 3. List all Images
 > docker image ls
 
+### 4. Run the Container
+> docker run --rm -it -p 8989:80 dtarczynski/simpleapi
+
+## Handy commands
+
 ### Start container
 > docker start 2db
 
@@ -26,10 +31,7 @@ ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
 ### List all containers
 > docker ps --all
 
-### Run Container from existing image
-> docker run --rm -it -p 8989:80 dtarczynski/simpleapi
-
-###Show container logs. When something goes wrong.
+### Show container logs. When something goes wrong.
 > docker logs 6cf52a3b570b
 
 ### Stop all running containers
