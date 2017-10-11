@@ -12,7 +12,7 @@ ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
 ```
 
 ## 2. Create an container Image from Dockerfile
-> docker build -t dtarczynski/simpleapi .
+> docker build -t dtarczynski/simpleapi:latest .
 
 ### 3. List all Images
 > docker image ls
