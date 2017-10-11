@@ -1,17 +1,18 @@
 # Docker How-To
 ## Create Dockerfile
 
-> FROM microsoft/aspnetcore:2.0
+` FROM microsoft/aspnetcore:2.0
 
-> ARG source
+ ARG source
 
-> WORKDIR /app
+ WORKDIR /app
 
-> #EXPOSE 8888
+ #EXPOSE 8888
 
-> COPY bin/Debug/netcoreapp2.0/publish .
+ COPY bin/Debug/netcoreapp2.0/publish .
 
-> ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
+ ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
+ `
 
 ### Start container
 > docker start 2db
