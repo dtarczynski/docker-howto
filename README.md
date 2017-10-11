@@ -14,6 +14,9 @@ ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
 ## 2. Create an container Image from Dockerfile
 > docker build -t dtarczynski/simpleapi .
 
+### 3. List all Images
+> docker image ls
+
 ### Start container
 > docker start 2db
 
@@ -22,9 +25,6 @@ ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
 
 ### List all containers
 > docker ps --all
-
-### List all Images
-> docker image ls
 
 ### Run Container from existing image
 > docker run --rm -it -p 8989:80 dtarczynski/simpleapi
