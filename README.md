@@ -1,14 +1,18 @@
 # Docker How-To
-## Create Dockerfile
+## 1. Create Dockerfile
+First create your Docker file that describes *Environment* required in order to run your Application
 
 ``` 
-FROM microsoft/aspnetcore:2.0
- ARG source
- WORKDIR /app
- #EXPOSE 8888
- COPY bin/Debug/netcoreapp2.0/publish .
- ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
- ```
+FROM microsoft/aspnetcore:2.0 #This is ASP.NET CORE RUNTIME (not SDK)
+ARG source
+WORKDIR /app
+#EXPOSE 8888
+COPY bin/Debug/netcoreapp2.0/publish .
+ENTRYPOINT ["dotnet", "Codmatic.Api.dll"]
+```
+
+## 2. Create an container Image from Dockerfile
+> docker build -t dtarczynski/simpleapi .
 
 ### Start container
 > docker start 2db
@@ -21,9 +25,6 @@ FROM microsoft/aspnetcore:2.0
 
 ### List all Images
 > docker image ls
-
-### Build Image from Dockerfile
-> docker build -t dtarczynski/simpleapi .
 
 ### Run Container from existing image
 > docker run --rm -it -p 8989:80 dtarczynski/simpleapi
