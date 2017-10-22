@@ -47,7 +47,9 @@ or
 
 > docker image prune
 
-## Scenario1. You want to same changes made to running container
+## Scenario1 - Saving changes 
+You want to save changes made to running container
+
 > docker commit container_id hubdoc.azurecr.io/myapp/database:latest
 
 ### Docker Cheat Sheet
