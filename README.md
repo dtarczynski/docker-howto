@@ -47,5 +47,8 @@ or
 
 > docker image prune
 
+## Scenario1. You want to same changes made to running container
+> docker commit container_id hubdoc.azurecr.io/myapp/database:latest
+
 ### Docker Cheat Sheet
 http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf
