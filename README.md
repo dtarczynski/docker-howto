@@ -54,3 +54,6 @@ You want to save changes made to running container
 
 ### Docker Cheat Sheet
 http://files.zeroturnaround.com/pdf/zt_docker_cheat_sheet.pdf
+
+### Azure (Private) Container Registry
+https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-docker-cli
